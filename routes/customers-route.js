@@ -6,6 +6,9 @@ const route = express.Router()
 route.get('/', async (req, res) => {
     const ret = await customers_model.all();
 
+    if(ret.length === 0)
+        res.send('faill');
+        
     res.status(200).json(ret);
 })
 
