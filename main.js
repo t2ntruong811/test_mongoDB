@@ -8,9 +8,9 @@ const app = express()
 
 console.log('uri', process.env.mongodb_uri);
 
-mongoose.connect(process.env.mongodb_uri, {
+await mongoose.connect(process.env.mongodb_uri, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 })
 
 mongoose.connection.on('connected', () => {
