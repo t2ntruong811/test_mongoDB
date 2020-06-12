@@ -6,7 +6,7 @@ const app = express()
 
 // connectDB()
 
-// alert('uri', process.env.mongodb_uri);
+console.log('uri', process.env.mongodb_uri);
 
 mongoose.connect(process.env.mongodb_uri, {
     useNewUrlParser: true,
@@ -14,7 +14,7 @@ mongoose.connect(process.env.mongodb_uri, {
 })
 
 mongoose.connection.on('connected', () => {
-    alert('Connected!');
+    console.log('Connected!');
 })
 
 const PORT = process.env.PORT || 3000
