@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const uri = "mongodb+srv://user1:123456abc@cluster0-nqsrs.mongodb.net/internet-banking?retryWrites=true&w=majority"
 
 const connectDB = async _ => {
-    await mongoose.connect(uri, {
+    await mongoose.connect(process.env.mongodb_uri, {
         useUnifiedTopology: true,
         useNewUrlParser: true
     })
