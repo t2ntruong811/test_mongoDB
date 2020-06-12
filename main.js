@@ -6,7 +6,7 @@ const app = express()
 
 // connectDB()
 
-alert('uri', process.env.mongodb_uri);
+// alert('uri', process.env.mongodb_uri);
 
 mongoose.connect(process.env.mongodb_uri, {
     useNewUrlParser: true,
