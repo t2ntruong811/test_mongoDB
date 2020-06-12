@@ -4,12 +4,12 @@ const customers_model = require('../models/customers-model')
 const route = express.Router()
 
 route.get('/', async (req, res) => {
-    const ret = await customers_model.all();
+    // const ret = await customers_model.all();
 
-    if(ret.length === 0)
-        res.send('faill');
+    // if(ret.length === 0)
+    res.send('abckjahsfkjjaskflj');
         
-    res.status(200).json(ret);
+    // res.status(200).json(ret);
 })
 
 route.get('/:id', async (req, res) => {
