@@ -12,9 +12,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Hellooo');
 })
-app.get('/customers', (req, res) => {
-    res.send('customers-abfmn');
-})
+
 app.use('/api/customers', require('./routes/customers-route'))
 app.use('/api/type_transactions', require('./routes/type_transactions-route'))
 
