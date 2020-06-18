@@ -1,17 +1,28 @@
 {
-  "name": "mongodb-test",
+  "name": "internetbanking-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "start": "node app"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.18"
+    "express-async-errors": "^3.1.1",
+    "http-errors": "^1.7.3",
+    "jsonwebtoken": "^8.5.1",
+    "lowdb": "^1.0.0",
+    "moment": "^2.25.3",
+    "mongoose": "^5.9.18",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node-rsa": "^1.0.8",
+    "rand-token": "^1.0.1"
   }
 }
